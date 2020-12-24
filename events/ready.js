@@ -5,7 +5,7 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = async client => {//> Remix proje
-  var oyun = ["Rol Koruma Sistemi!"];
+  var oyun = ["No Mercy ♥ Athanasia"];
 
   setInterval(async () => {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
@@ -13,6 +13,4 @@ module.exports = async client => {//> Remix proje
     client.user.setActivity(oyun[random], { type: "WATCHING" });
   }, 12000);
   client.user.setStatus("online");
-
-  /*client.user.setActivity("a!yardım | a!davet | a!prefix ☣", { type: "WATCHING" });*/
 };
