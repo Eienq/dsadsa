@@ -196,6 +196,30 @@ client.on("roleCreate", async role => {
   client.channels.get(kanal).send(embed);
 });
 //////////////////////////////////////////////////////////////////////////////
+client.on("message", async message => {
+  const a = message.content.toLowerCase();
+  if (
+    a === "slam" ||
+    a === "sa" ||
+    a === "selamun aleyküm" ||
+    a === "selamın aleyküm" ||
+    a === "selam" ||
+    a === "slm"
+  ) {
+    let i = await db.fetch(`saas_${message.guild.id}`);
+    if (i === "acik") {
+      const embed = new Discord.RichEmbed()
+        .setColor("BLACK")
+        .setTitle("Sa-As sistemi!")
+        .setDescription(
+          "<a:krstl:645227930208829450> **Aleyküm Selam, Hoşgeldin!**"
+        )
+        .setFooter(client.user.username, client.user.avatarURL);
+
+      message.channel.send(embed).then(msg => msg.delete(5000));
+    }
+  }
+});
 
 client.on("guildMemberAdd", async member => {
   db.fetch(`dm_${member.guild.id}`).then(i => {
@@ -203,7 +227,7 @@ client.on("guildMemberAdd", async member => {
       const msj = new Discord.RichEmbed()
         .setColor("BLACK")
         .setDescription(
-          `<@${member.user.id}> sunucuya hoşgeldin!\nBu sunucu **<@${client.user.id}>** kullanıyor!\nKomutlarımı görmek için: !yardım\`)
+          `<@${member.user.id}> sunucuya hoşgeldin!\nBu sunucu **<@${client.user.id}>** kullanıyor!\nKomutlarımı görmek için: !yardım\nEğer beni eklemek istersen: [[Tıkla!]](https://discordapp.com/oauth2/authorize?client_id=642436223314558976&scope=bot&permissions=8)`
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
@@ -220,7 +244,7 @@ client.on("guildMemberRemove", async member => {
       let msj = new Discord.RichEmbed()
         .setColor("BLACK")
         .setDescription(
-          `<@${member.user.id}> Aramızdan ayrıldı.\n Görüşmek üzere!`
+          `<@${member.user.id}> Güle güle, özleneceksin!\nEğer beni eklemek istersen: [[Tıkla!]](https://discordapp.com/oauth2/authorize?client_id=642436223314558976&scope=bot&permissions=8)`
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
