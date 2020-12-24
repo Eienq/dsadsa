@@ -4,7 +4,7 @@ const Discord = require("discord.js"),
 exports.run = async (bot, message, args, tools) => {
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
   const embed = new Discord.RichEmbed()
-    .setDescription(`DevTr Ye Aittir | Bot sürümü; **v0.1**, Prefix: **${prefix}**, Dil: **tr**`)
+    .setDescription(`Prefix: **${prefix}**`)
     .addField(
       `Davetler`,
       `\`davet-kanal\`, \`davet-kanal-sıfırla\`, \`davet-ekle\`, \`davet-sıfırla\`, \`davet-sil\`, \`davet-stokla\`, \`davetlerim\`, \`davet-oluştur\``
