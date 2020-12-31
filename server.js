@@ -203,7 +203,7 @@ client.on("guildMemberAdd", async member => {
       const msj = new Discord.RichEmbed()
         .setColor("BLACK")
         .setDescription(
-          `<@${member.user.id}> Aramıza hoşgeldin!\n İyi vakit geçirmen dileğiyle!)`
+          `<@${member.user.id}>Adlı kişi aramıza katıldı! Hoşgeldin..\n İyi vakit geçirmen dileğiyle!)`
         )
         .setFooter(client.user.username, client.user.avatarURL);
 

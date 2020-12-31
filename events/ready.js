@@ -4,8 +4,8 @@ const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
-module.exports = async client => {//> Remix proje
-  var oyun = ["No Mercy ♥ Athanasia"];
+module.exports = async client => {
+  var oyun = ["No Mercy ♥ Aqualast"];
 
   setInterval(async () => {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
