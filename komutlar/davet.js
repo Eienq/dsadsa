@@ -13,7 +13,7 @@ module.exports.run = async (client, message) => {
 module.exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["invite"],
   permLevel: 0,
   kategori: "sunucu"
 };
