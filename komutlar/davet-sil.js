@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
-  if (!message.member.hasPermission("KICK_MEMBERS")) {
+  if (!message.member.hasPermission("ADMINISTRATOR")) {
     const embed = new Discord.RichEmbed()
-      .setDescription("```Ne yazık ki bu komutu kullanmaya yetkin yok.```")
+      .setDescription("```Vah Vah Vah Gariban Bu Komutu Kullanamıyoo.```")
       .setColor("BLACK")
 .setFooter(bot.user.username, bot.user.avatarURL)
     message.channel.send(embed);
