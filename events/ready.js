@@ -4,13 +4,11 @@ const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
-module.exports = async client => {
-  var oyun = ["Berat ❤️ Artius"];
-
-  setInterval(async () => {
-    var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
-
-    client.user.setActivity(oyun[random], { type: "WATCHING" });
-  }, 12000);
-  client.user.setStatus("online");
+module.exports = client => {
+  console.log(`[BOT] | Botun destekçileri ve komutları başarıyla yüklendi, işlemler tamamlandı !`);
+  console.log(`[BOT] | (${client.user.username}) HAZIR KAPTAN STRIGA !
+  ‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒`);
+  client.user.setStatus("dnd");
+  client.user.setActivity("Berat ❤️ Artius", { type: "WATCHING"}); //// TYPE - WATCHING , PLAYING , LISTENING gibi değiştirilebilir.
+  console.log(`LOG İNVİTES`);
 };

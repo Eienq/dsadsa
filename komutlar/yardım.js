@@ -23,6 +23,6 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "yardım"
+  name: "iyardım"
 };
 //DevTR Kodlayan The Journey
