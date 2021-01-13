@@ -690,15 +690,6 @@ client.on("error", e => {
 client.login(process.env.token);
 
 client.on("ready", async function() {
-const voiceChannel = "797064512376930344"
-client.channels.cache.get(voiceChannel).join()
-.catch(err => {
-throw err;
-})
-})
-
-
-client.on("ready", async function() {
 const voiceChannel = "797225778097029190"
 client.channels.cache.get(voiceChannel).join()
 .catch(err => {
