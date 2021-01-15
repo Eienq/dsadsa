@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
       .setDescription(`Zaten herhangi bir rütbe ayarlanmamış!`)
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
+    .setFooter("Berat 🖤 Artius")
 
     message.channel.send(embed);
   }
@@ -26,7 +26,7 @@ exports.run = async (client, message, args) => {
           }** - ${veri12} Davet!`
         )
         .setColor("BLACK")
-        .setFooter(client.user.username, client.user.avatarURL);
+    .setFooter("Berat 🖤 Artius")
 
       message.channel.send(embed);
       return;
@@ -40,7 +40,7 @@ exports.run = async (client, message, args) => {
           }** - ${veri21} Davet!`
         )
         .setColor("BLACK")
-        .setFooter(client.user.username, client.user.avatarURL);
+    .setFooter("Berat 🖤 Artius")
 
       message.channel.send(embed);
       return;

@@ -10,7 +10,7 @@ exports.run = async (bot, message, args) => {
     .setColor("BLACK")
     .setTimestamp()
         .setDescription(`Davet kodu oluşturuldu! (https://discord.gg/${invite.code})`)
-      .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
     return message.channel.sendEmbed(sunucubilgi).catch(e => {
 return
     });

@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     const embed = new Discord.RichEmbed()
       .setDescription("```Vah Vah Vah Gariban Bu Komutu Kullanamıyoo.```")
       .setColor("BLACK")
-.setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
     return;
   }
@@ -18,7 +18,7 @@ let m = args.slice(1).join(" ")
       new Discord.RichEmbed()
         .setDescription("Lütfen daveti silinecek kişiyi etiketleyiniz!")
         .setColor("BLACK")
-      .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
     );
   }
     if (!m) {
@@ -26,13 +26,13 @@ let m = args.slice(1).join(" ")
       new Discord.RichEmbed()
         .setDescription("Lütfen silinecek davet sayısını giriniz.")
         .setColor("BLACK")
-      .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
     );
   }
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
     .setDescription(`${u} Adlı şahstan; ${m} davet silindi!`)
-  .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
   message.channel.send(embed);
 
   db.add(`davet_${u.id}_${message.guild.id}`, -m);

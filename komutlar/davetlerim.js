@@ -25,7 +25,7 @@ exports.run = async (client, message, args, tools) => {
       .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
       .addField(`Total Davet:`, sayı2, true)
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
+    .setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
   }
   if (message.member.roles.has(veri2)) {
@@ -33,7 +33,7 @@ exports.run = async (client, message, args, tools) => {
       .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
       .addField(`Total Davet:`, sayı2, true)
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
+    .setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
     return;
   }
@@ -55,7 +55,7 @@ exports.run = async (client, message, args, tools) => {
         .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
         .addField(`Total Davet:`, sayı2, true)
         .setColor("BLACK")
-        .setFooter(client.user.username, client.user.avatarURL);
+    .setFooter("Berat 🖤 Artius")
       message.channel.send(embed);
       return;
     }

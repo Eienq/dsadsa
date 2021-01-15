@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("ADMINISTRATOR")) {
     const embed = new Discord.RichEmbed()
       .setDescription("```Vah Vah Vah Gariban Bu Komutu Kullanamıyoo.```")
-    .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
       .setColor("BLACK");
 
     message.channel.send(embed);
@@ -18,14 +18,14 @@ module.exports.run = async (bot, message, args) => {
     return message.channel.send(
       new Discord.RichEmbed()
         .setDescription("Davet kanalı zaten ayarlanmamış!")
-      .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
         .setColor("BLACK")
     );
   }
   db.delete(`davetkanal_${message.guild.id}`)
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
-  .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
     .setDescription(`Davet kanalı başarıyla sıfırlandı!`);
   message.channel.send(embed);
 return

@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
     .setDescription(`Davetleriniz stoklandı!`)
-  .setFooter(bot.user.username, bot.user.avatarURL)
+    .setFooter("Berat 🖤 Artius")
   message.channel.send(embed);
 //HAVASI YOK BUNUN
 };
