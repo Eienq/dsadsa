@@ -12,8 +12,8 @@ exports.run = async (bot, message, args, tools) => {
     .addField(`Rütbeler`, `\`rütbe-ekle\`, \`rütbe-sil\`, \`rütbe-liste\``)
 
     .setColor("BLACK")
-    .setFooter(bot.user.username, bot.user.avatarURL);
-  message.channel.send(embed);
+.setFooter("Berat 🖤 Artius") 
+message.channel.send(embed);
 };
 exports.conf = {
   enabled: true,

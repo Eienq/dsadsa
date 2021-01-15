@@ -10,8 +10,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
       .setDescription(`Lütfen silinecek rütbenin rolünü etiketleyiniz!`)
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
-
+.setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
     return;
   }
@@ -23,8 +22,7 @@ exports.run = async (client, message, args) => {
         }** rolüne sahip rütbe silindi!`
       )
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
-
+.setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
 
     if (!veri) {
@@ -45,8 +43,7 @@ exports.run = async (client, message, args) => {
         }** rolüne sahip rütbe silindi!`
       )
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
-
+.setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
 
     await db.delete(`rol2_${message.guild.id}`);
@@ -56,8 +53,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
       .setDescription(`Rütbeler arasında böyle bir rütbe bulamadım!`)
       .setColor("BLACK")
-      .setFooter(client.user.username, client.user.avatarURL);
-
+.setFooter("Berat 🖤 Artius")
     message.channel.send(embed);
     return;
   }
