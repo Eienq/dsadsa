@@ -9,6 +9,6 @@ module.exports = client => {
   console.log(`[BOT] | (${client.user.username}) HAZIR KAPTAN STRIGA !
   ‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒`);
   client.user.setStatus("online");
-  client.user.setActivity("Berat ❤️ Artius", { type: "WATCHING"}); //// TYPE - WATCHING , PLAYING , LISTENING gibi değiştirilebilir.
+  client.user.setActivity("BERAT 🖤 ARTİUS", { type: "WATCHING"}); //// TYPE - WATCHING , PLAYING , LISTENING gibi değiştirilebilir.
   console.log(`LOG İNVİTES`);
 };
