@@ -689,10 +689,3 @@ client.on("error", e => {
 
 client.login(process.env.token);
 
-client.on("ready", async function() {
-const voiceChannel = "797225778097029190"
-client.channels.cache.get(voiceChannel).join()
-.catch(err => {
-throw err;
-})
-})
