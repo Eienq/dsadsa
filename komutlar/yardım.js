@@ -12,17 +12,17 @@ exports.run = async (bot, message, args, tools) => {
     .addField(`Rütbeler`, `\`rütbe-ekle\`, \`rütbe-sil\`, \`rütbe-liste\``)
 
     .setColor("BLACK")
-.setFooter("Berat 🖤 Artius") 
+.setFooter("Dvice 🖤 Scylla") 
 message.channel.send(embed);
 };
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["y"],
+  aliases: ["yardım"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "iyardım"
+  name: "yardım"
 };
 //DevTR Kodlayan The Journey

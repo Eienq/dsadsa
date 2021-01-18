@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("ADMINISTRATOR")) {
     const embed = new Discord.RichEmbed()
       .setDescription("```Vah Vah Vah Gariban Bu Komutu Kullanamıyoo.```")
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
       .setColor("BLACK");
 
     message.channel.send(embed);
@@ -18,13 +18,13 @@ module.exports.run = async (bot, message, args) => {
     return message.channel.send(
       new Discord.RichEmbed()
         .setDescription("Lütfen bir kanal belirtiniz!")
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
         .setColor("BLACK")
     );
   }
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
     .setDescription(`Davet kanalı; ${kanal} olarak ayarlandı!`);
   message.channel.send(embed);
 

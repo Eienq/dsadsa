@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
       new Discord.RichEmbed()
         .setDescription("Lütfen daveti sıfırlanacak kişiyi etiketleyiniz!")
         .setColor("BLACK")
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
     );
   }
 
@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
     .setDescription(
       `${u} Adlı şahsın davetlerinin sıfırlanmasını onaylıyor musunuz?`
     )
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
   message.channel.send(embed).then(async function(sentEmbed) {
     const emojiArray = ["✅"];
     const filter = (reaction, user) =>

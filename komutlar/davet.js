@@ -5,7 +5,7 @@ module.exports.run = async (client, message) => {
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
     .addField(`Artius`)
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
 
   message.channel.send(embed);
 };

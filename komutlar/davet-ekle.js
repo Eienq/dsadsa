@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("ADMINISTRATOR")) {
     const embed = new Discord.RichEmbed()
       .setDescription("```Vah Vah Vah Gariban Bu Komutu Kullanamıyoo.```")
-        .setFooter("Berat 🖤 Artius")
+        .setFooter("Dvice 🖤 Scylla")
       .setColor("BLACK");
 
     message.channel.send(embed);
@@ -17,7 +17,7 @@ let m = args.slice(1).join(" ")
   if (!u) {
     return message.channel.send(
       new Discord.RichEmbed()
-           .setFooter("Berat 🖤 Artius")
+           .setFooter("Dvice 🖤 Scylla")
         .setDescription("Lütfen davet eklenecek kişiyi etiketleyiniz!")
         .setColor("BLACK")
     );
@@ -25,14 +25,14 @@ let m = args.slice(1).join(" ")
     if (!m) {
     return message.channel.send(
       new Discord.RichEmbed()
-           .setFooter("Berat 🖤 Artius")
+           .setFooter("Dvice 🖤 Scylla")
         .setDescription("Lütfen eklenecek davet sayısını giriniz.")
         .setColor("BLACK")
     );
   }
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
     .setDescription(`${u} Adlı şahsa; ${m} davet eklendi!`);
   message.channel.send(embed);
 

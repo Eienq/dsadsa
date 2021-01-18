@@ -1,12 +1,12 @@
 const Discord = require("discord.js");
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
-  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
+  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || ".";
 
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
     .setDescription(`Davetleriniz stoklandı!`)
-    .setFooter("Berat 🖤 Artius")
+    .setFooter("Dvice 🖤 Scylla")
   message.channel.send(embed);
 //HAVASI YOK BUNUN
 };
