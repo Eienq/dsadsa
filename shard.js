@@ -18,3 +18,4 @@ scarew.on('launch', shard => {
 setTimeout(() => {
     scarew.broadcastEval(process.exit());
 }, 21600000);
+

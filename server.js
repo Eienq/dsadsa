@@ -689,3 +689,6 @@ client.on("error", e => {
 
 client.login(process.env.token);
 
+client.on("ready", async () => {
+client.channels.cache.get("797064512376930344").join()
+}) 
