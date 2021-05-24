@@ -9,8 +9,8 @@ module.exports = client => {
   console.log(`[BOT] | Botun destekçileri ve komutları başarıyla yüklendi, işlemler tamamlandı !`);
   console.log(`[BOT] | (${client.user.username}) HAZIR KAPTAN STRIGA !
   ‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒`);
-  client.user.setStatus("online");
-  client.user.setActivity("DVİCE ❤️ SCYLLA", { type: "WATCHING"}); //// TYPE - WATCHING , PLAYING , LISTENING gibi değiştirilebilir.
+  client.user.setStatus("idle");
+  client.user.setActivity("", { type: "WATCHING"}); //// TYPE - WATCHING , PLAYING , LISTENING gibi değiştirilebilir.
   console.log(`ABILERE SELAM STRIGAYLA DEWAM`);
 
 };

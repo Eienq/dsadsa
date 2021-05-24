@@ -12,7 +12,7 @@ exports.run = async (bot, message, args, tools) => {
     .addField(`Rütbeler`, `\`rütbe-ekle\`, \`rütbe-sil\`, \`rütbe-liste\``)
 
     .setColor("BLACK")
-.setFooter("Dvice 🖤 Scylla") 
+.setFooter("Rawien 🖤 1940") 
 message.channel.send(embed);
 };
 exports.conf = {

@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
       .setDescription(`Zaten maksimum rütbe sınırına ulaşmışsınız!`)
       .setColor("BLACK")
-    .setFooter("Dvice 🖤 Scylla")
+    .setFooter("Rawien 🖤 1940")
 
     message.channel.send(embed);
     return;
@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
           `Lütfen bir rol etiketleyiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
         )
         .setColor("BLACK")
-    .setFooter("Dvice 🖤 Scylla")
+    .setFooter("Rawien 🖤 1940")
 
       message.channel.send(embed);
       return;
@@ -35,7 +35,7 @@ exports.run = async (client, message, args) => {
           `Lütfen bir davet sayısı belirtiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
         )
         .setColor("BLACK")
-    .setFooter("Dvice 🖤 Scylla")
+    .setFooter("Rawien 🖤 1940")
 
       message.channel.send(embed);
       return;
@@ -45,7 +45,7 @@ exports.run = async (client, message, args) => {
         `Başarılı bir şekilde ${sine} rolü ${enis} davet karşılığında elde edilebilecek!`
       )
       .setColor("BLACK")
-    .setFooter("Dvice 🖤 Scylla")
+    .setFooter("Rawien 🖤 1940")
 
     message.channel.send(embed);
     await db.set(`rol1_${message.guild.id}`, sine.id);
@@ -62,7 +62,7 @@ exports.run = async (client, message, args) => {
           `Lütfen bir rol etiketleyiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
         )
         .setColor("BLACK")
-    .setFooter("Dvice 🖤 Scylla")
+    .setFooter("Rawien 🖤 1940")
 
       message.channel.send(embed);
       return;
@@ -73,7 +73,7 @@ exports.run = async (client, message, args) => {
           `Lütfen bir davet sayısı belirtiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
         )
         .setColor("BLACK")
-        .setFooter("Dvice 🖤 Scylla")
+        .setFooter("Rawien 🖤 1940")
       message.channel.send(embed);
       return;
     }
@@ -82,7 +82,7 @@ exports.run = async (client, message, args) => {
         `Başarılı bir şekilde ${sine} rolü ${enis} davet karşılığında elde edilebilecek!`
       )
       .setColor("BLACK")
-    .setFooter("Dvice 🖤 Scylla")
+    .setFooter("Rawien 🖤 1940")
 
     message.channel.send(embed);
 if(enis < veri12){
